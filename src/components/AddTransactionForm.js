@@ -18,7 +18,7 @@ function AddTransactionForm({ onAddTransaction }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://localhost:8001/transactions', {
+    fetch('https://code-challenge-ikle.onrender.com/transactions', {
       method: 'POST',
       body: JSON.stringify(formData),
       headers: {
