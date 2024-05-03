@@ -30,7 +30,7 @@ function App() {
         <h2>The Royal Bank of Flatiron</h2>
       </div>
       <AddTransactionForm onAddTransaction={handleAddTransaction} />
-      <Search onSearch={handleSearch} />
+      <Search onSearch={handleSearch} /> {/* Include the Search component */}
       <AccountContainer transactions={filteredTransactions} />
     </div>
   );
